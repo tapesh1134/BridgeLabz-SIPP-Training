@@ -1,1 +1,1 @@
-# BridgeLabz_Practicle
+# BridgeLabz_Practical
