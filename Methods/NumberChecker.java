@@ -1,15 +1,18 @@
+
 public class NumberChecker {
 
-    // Method to check if a number is prime
     public static boolean isPrime(int number) {
-        if (number <= 1) return false;
+        if (number <= 1) {
+            return false;
+        }
         for (int i = 2; i <= Math.sqrt(number); i++) {
-            if (number % i == 0) return false;
+            if (number % i == 0) {
+                return false;
+            }
         }
         return true;
     }
 
-    // Method to check if a number is neon
     public static boolean isNeon(int number) {
         int square = number * number;
         int sum = 0;
@@ -20,7 +23,6 @@ public class NumberChecker {
         return sum == number;
     }
 
-    // Method to check if a number is spy
     public static boolean isSpy(int number) {
         int sum = 0;
         int product = 1;
