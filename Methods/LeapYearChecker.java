@@ -1,8 +1,8 @@
+
 import java.util.Scanner;
 
 public class LeapYearChecker {
 
-    // Method to check if a year is a leap year
     public static boolean isLeapYear(int year) {
         if (year < 1582) {
             return false;
