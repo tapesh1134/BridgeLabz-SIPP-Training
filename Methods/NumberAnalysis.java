@@ -1,18 +1,16 @@
+
 import java.util.Scanner;
 
 public class NumberAnalysis {
 
-    // Method to check if number is positive
     public static boolean isPositive(int number) {
         return number >= 0;
     }
 
-    // Method to check if number is even
     public static boolean isEven(int number) {
         return number % 2 == 0;
     }
 
-    // Method to compare two numbers: returns 1 if number1 > number2, 0 if equal, -1 if number1 < number2
     public static int compare(int number1, int number2) {
         if (number1 > number2) {
             return 1;
