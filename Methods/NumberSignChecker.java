@@ -1,19 +1,16 @@
+
 import java.util.Scanner;
 
 public class NumberSignChecker {
 
-    // Method to check if number is positive or negative
     public static boolean isPositive(int number) {
         return number >= 0;
     }
 
-    // Method to check if number is even or odd
     public static boolean isEven(int number) {
         return number % 2 == 0;
     }
 
-    // Method to compare two numbers
-    // Returns 1 if number1 > number2, 0 if equal, -1 if number1 < number2
     public static int compare(int number1, int number2) {
         if (number1 > number2) {
             return 1;
