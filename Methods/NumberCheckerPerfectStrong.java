@@ -1,9 +1,8 @@
 
 public class NumberCheckerPerfectStrong {
 
-    // Method to find sum of proper divisors of a number
     public static int sumOfProperDivisors(int number) {
-        int sum = 1; // 1 is always a proper divisor (except for 1 itself)
+        int sum = 1;
         for (int i = 2; i <= number / 2; i++) {
             if (number % i == 0) {
                 sum += i;
@@ -12,21 +11,25 @@ public class NumberCheckerPerfectStrong {
         return sum;
     }
 
-    // Method to check if a number is perfect
     public static boolean isPerfectNumber(int number) {
-        if (number <= 1) return false;
+        if (number <= 1) {
+            return false;
+        }
         return sumOfProperDivisors(number) == number;
     }
 
-    // Method to check if a number is abundant
     public static boolean isAbundantNumber(int number) {
-        if (number <= 1) return false;
+        if (number <= 1) {
+            return false;
+        }
         return sumOfProperDivisors(number) > number;
     }
 
     // Method to check if a number is deficient
     public static boolean isDeficientNumber(int number) {
-        if (number <= 1) return false;
+        if (number <= 1) {
+            return false;
+        }
         return sumOfProperDivisors(number) < number;
     }
 
