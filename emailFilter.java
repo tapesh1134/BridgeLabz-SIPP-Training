@@ -102,7 +102,7 @@ class EmailManager {
             }
         }
         if (result.isEmpty()) {
-            throw new NoEmployeeFoundException("No employee found for domain: " + domain);
+            throw new NoEmployeeFoundException("No employee found" + domain);
         }
         return result;
     }
@@ -113,12 +113,8 @@ public class emailFilter {
     public static void main(String[] args) {
         EmailManager manager = new EmailManager();
 
-        manager.addEmployee("Alice", "alice_1@company.com");
-        manager.addEmployee("Bob", "bob.smith@company.com");
-        manager.addEmployee("Charlie", "charlie@company.co");
-        manager.addEmployee("Dave", "dave_01@company.com");
-        manager.addEmployee("Eve", "eve@other.com");
-        manager.addEmployee("Frank", "frank99@company.com");
+        manager.addEmployee("Alice", "alice_1@c.com");
+        manager.addEmployee("Bob", "bob.smith@c.com");
 
         try {
             List<Employee> companyEmployees = manager.searchByDomain("company.com");
